@@ -1,0 +1,5 @@
+This is a slightly modified version of the RowEditor.  Changes have been made to startEditing and stopEditing:
+
+startEditing - uses what may be an application-specific change to add a fake record to any Ext.form.ComboBox Editors if a record corresponding to the ID of the Combo's hiddenName is not present. This is to present a human-readable value in the combo before the combo's store has loaded.
+
+stopEditing - if an Editor has a getSubmitValue method defined, this is used instead of getValue.  This is useful for checkboxes, which sometimes don't return what is needed.
