@@ -387,7 +387,7 @@ Ext.ux.grid.RowEditor = Ext.extend(Ext.Panel, {
           field.hide();
         } else {
           //add 1px padding to each field, or 3px for the last column's field
-          var adjust = (i === (len - 1)) ? 3 : 1;
+          var adjust = (i === (len - 1)) ? 3 : 2;
           
           field.show();
           field.setWidth(cm.getColumnWidth(i) - adjust);          
