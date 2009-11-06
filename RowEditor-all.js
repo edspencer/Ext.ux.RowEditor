@@ -282,44 +282,6 @@ Ext.ux.grid.RowEditor = Ext.extend(Ext.Panel, {
       
       this.values[field.id] = Ext.isEmpty(value) ? '' : value;
     }, this);
-    
-    // var cm     = grid.getColumnModel(),
-    //     fields = this.items.items, f, val;
-    // 
-    // for(var i = 0, len = cm.getColumnCount(); i < len; i++){
-    //   val = this.preEditValue(record, cm.getDataIndex(i));
-    //   f   = fields[i];
-    //   
-    //   //START CHANGES
-    //   if (f.getXType() == 'combo') {
-    //     var combo       = f,
-    //         store       = combo.store,
-    //         value       = combo.getValue(),
-    //         recordIndex = store.find(combo.valueField, (value || "").toString());
-    //     
-    //     if (recordIndex == -1 && !Ext.isEmpty(value)) {
-    //       //if the record that our combo is pointing to isn't in the store, create a fake one and add it
-    //       var data = {};
-    //       data[combo.valueField]   = value;
-    //       data[combo.displayField] = record.get(combo.displayField);
-    //      
-    //       var fakeRecord = new store.recordType(data);
-    //       store.add(fakeRecord);
-    //      
-    //       combo.setValue(value);
-    //     }
-    //   } else if (f.getXType() == 'displayfield') {
-    //     var column = cm.getColumnById(cm.getColumnId(i));
-    //     
-    //     if (column.renderer != undefined) {
-    //       val = column.renderer.call(column, val, {}, record);
-    //       f.setValue(val);
-    //     }
-    //   } else {
-    //     f.setValue(val);
-    //   }
-    //   
-    //   //END CHANGES
   },
   
   /**
